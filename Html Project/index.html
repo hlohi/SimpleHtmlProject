@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="auther" content="Hlohi" />
+    <meta name="description" content="This page contains all the things I am learning how to 
+        create as I learn HTML. " />
+    <link rel="icon" href="register.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+
+    <title>My First Web Page</title>
+</head>
+
+
+<style>
+.larger-image{
+    width: 500px;
+}
+
+.blue-text {
+  color:blue
+}
+    p{
+        font-size: 16px;
+        font-family: monospace;
+        color: aqua;
+    }
+</style>
+
+
+<body>
+    <header>
+        <h1 class="blue-text">Hello World!</h1>
+                         
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#vaction">Planning a Vacation </a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="html">
+            <!--we use the article elements when there is a clear topic specific -->
+            <h2>Hello World!</h2>
+            <!--we use section elements for general topics-->
+            <p>This is my first web page</p>
+
+            <section>
+                <h3>HTML5</h3>
+                <img class="larger-image" src="img/Dávid Vietórisz_Star_YU1hQ2JecA.jpg" alt="HTML5 
+        pic" title="I am learning HTML5"  height="300" />
+                <figure>
+                    <figcaption>
+                        An Example of HTML5 code
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <p>
+                    <code>&lt;h1&gt;Hello World!&lt;/h1
+                &gt;</code>
+                    </code>
+                </p>
+                <h3>My daily Schedule</h3>
+                <p>Let me tell you how:</p>
+                <ol>
+                    <li>...I learn about web dev.</li>
+                    <li>...I plan out my Schedule</li>
+                    <li>
+                        ...I use resources from
+                        <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.
+                org/">MDN</a>
+                        </abbr>
+                    </li>
+                </ol>
+                <aside> <!--complementary text thats not as important as the main text-->
+                     <details> <!--details and the summary work together. Privides details about the product,warranty information-->
+                         <summary>Guess the <mark>number of 
+                             hours</mark> i code per day</summary>
+                         <p>I start at <time datetime="08:00"> 8 am</time>and I write 
+                             code for <time datetime="PT3H">3 hours</time> every morning.
+                         </p>
+                     </details>
+                </aside>
+                <br>
+                <table> 
+                    <caption> My daily Schedule </caption><!--adding semantics to the table-->
+                    <thead> <!--adds semantics to the table, but doesn't change the table at all-->
+                        
+                    <tr>    <!--table row-->
+                        <th>Time</th> <!--table header-->
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>
+                            <time datetime="08:00">8am</time>-<time 
+                            datetime="11:00">11am</time>
+                        </td>
+                        <td>write Code</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="11:00">11am</time>-<time 
+                            datetime="12:00">12am</time>
+                        </td>
+                        <td>Eat Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="12:00">12pm</time>-<time 
+                            datetime="17:00">5pm</time>
+                        </td>
+                        <td>Study for Other Courses</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">All Other Times</td>
+                        <td colspan="2">Free Time</td> <!--take the width of two columns-->
+                    </tr>
+                    <tr>
+                        <td>Sleep</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+                </table>
+            </section>
+        </article>
+
+        <hr />
+       <article>
+        <section id="vaction">
+            <h2>I Am Also Planning a Vacation!</h2>
+            <p>I've been working hard and <em>really need a getaway.</em></p>
+            <p>
+                I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.
+            </p>
+
+            <h3>Place I'd Like to visit</h3>
+            <ul>
+                <li>
+                    <p>I've heard good things about the Caribbean.</p>
+                </li>
+                <figure>
+                    <img src="img/Daniel Sjöström_Fallen_YUNrQQ.jpg" alt="picture" title="I want to visit a carribian 
+            beach" width="400" height="225" loading="lazy" />
+                    <figcaption>Caribbean Beach getaway</figcaption>
+                </figure>
+                <li>
+                    <p>I've heard good things about going there:</p>
+                    <address>
+                        Margariaville Island Reserve Riviera Cancun<br />
+                        Bahia Petempich Puerto Morelos, Mexico<br />
+                        Colonia Morelos, Mexico 77580
+                    </address>
+                    <figure>
+                        <img src="img/Daniel Chung_Lion's Gate_YkRlQmFdew.jpg" alt="Canucun
+            Vacation" title="It's 5 o clock 
+            somewhere" height="350" width="300" loading="lazy" />
+                        <figcaption>A Caribbean Vacation Image</figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!--Todo: add more places -->
+            <h3>Place I want to Avoid</h3>
+            <dl>
+                <dt>North pole</dt>
+                <dd>I hear this is <strong>cold </strong>!</dd>
+
+                <dt>South Pole</dt>
+                <dd>This is also cold.</dd>
+
+                <dt>Mountain Tops</dt>
+                <dd>These are also cold</dd>
+            </dl>
+        </section>
+    </article>
+    <hr>
+
+    <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you!</p>
+
+        <from action="https://httpbin.org/get"
+        method="get">
+        <p>
+            <label for="firstname">First Name:</label>
+              <input type="text" name="firstName"
+              id="firstName" placeholder="Jane"
+              autocomplete="on" required autofocus>
+            
+        </p>
+              
+        <p>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname"
+            id="lastname" placeholder="Doe"
+            autocomplete="on" required >
+          
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password"
+            id="password" placeholder="your secret"
+            autocomplete="on" required >
+          
+        </p>
+        <p>
+            <label for="phone">Password:</label>
+            <input type="tel" name="phone"
+            id="phone" placeholder="555-555-555"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required >
+          
+        </p>
+        <p>
+            <label for="decade">Favorite Decade:</label>
+            <input type="number" name="decade"
+            id="decade" min="1950" max="2020"
+            step="10"value="1980" >
+          
+        </p>
+
+        <p>
+            <label for="coffee"> Favorite Coffee:
+            </label>
+        </p>
+              
+        </from>
+    </article>
+    </main>
+    <hr />
+    <footer>
+        <p>&lt;&lt;&lt; &copy;<a href="about.html"> Dave Gray </a>&gt;&gt;&gt;</p>
+
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+</body>
+
+</html>
